@@ -1,0 +1,12 @@
+monolog:
+  channels: ['notification']
+  handlers:
+    # Define a handler for the notification channel
+    notification:
+      type: stream
+      # Specify the path to the notifications.log file
+      # %kernel.logs_dir% resolves to the var/log directory by default
+      path: "%kernel.logs_dir%/notifications.log"
+      level: info
+      # Bind this handler to the notification channel
+      channels: ['notification']

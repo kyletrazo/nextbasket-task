@@ -15,10 +15,8 @@ class UserCreatedEventHandlerTest extends TestCase
         $firstName = 'John';
         $lastName = 'Doe';
 
-        // Create a mock of the LoggerInterface.
         $loggerMock = $this->createMock(LoggerInterface::class);
         
-        // Expect the 'info' method to be called once with the specific message and context.
         $loggerMock->expects($this->once())
                    ->method('info')
                    ->with(
@@ -30,13 +28,10 @@ class UserCreatedEventHandlerTest extends TestCase
                        ])
                    );
 
-        // Create an instance of UserCreatedEvent with test data.
         $event = new UserCreatedEvent($email, $firstName, $lastName);
-        
-        // Initialize the handler with the mocked logger.
+
         $handler = new UserCreatedEventHandler($loggerMock);
-        
-        // Invoke the handler with the event.
+
         $handler($event);
     }
 }

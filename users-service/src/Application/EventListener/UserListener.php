@@ -1,5 +1,5 @@
 <?php 
-namespace App\EventListener;
+namespace App\Application\EventListener;
 
 use App\Entity\User;
 use App\Application\Event\UserCreatedEvent;

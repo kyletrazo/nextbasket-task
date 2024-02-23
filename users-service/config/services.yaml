@@ -20,7 +20,7 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
-    App\EventListener\UserListener:
+    App\Application\EventListener\UserListener:
         tags:
             - { name: 'doctrine.orm.entity_listener', event: 'postPersist', entity: 'App\Entity\User' }
     # add more service definitions when explicit configuration is needed

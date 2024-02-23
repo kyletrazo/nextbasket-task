@@ -1,0 +1,35 @@
+# Symfony specific notifications 
+/notifications-service/.env.local
+/notifications-service/.env.local.php
+/notifications-service/.env.*.local
+/notifications-service/public/bundles/
+/notifications-service/var/
+/notifications-service/vendor/
+/notifications-service/bin/
+/notifications-service/var/
+/notifications-service/symfony.lock
+/notifications-service/.phpunit.result.cache
+
+# Symfony specific users
+/users-service/.env.local
+/users-service/.env.local.php
+/users-service/.env.*.local
+/users-service/public/bundles/
+/users-service/var/
+/users-service/vendor/
+/users-service/bin/
+/users-service/var/
+/users-service/symfony.lock
+/users-service/.phpunit.result.cache
+
+# IDE specific
+/.idea/
+/.vscode/
+
+# Tests
+/users-service/phpunit.xml
+# /notifications-service/phpunit.xml.dist
+
+# Application specific
+/public/uploads/
+/public/media/
